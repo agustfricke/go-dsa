@@ -1,5 +1,0 @@
-Go -> 11.886652159s
-Bun -> 11.937 segundos
-Python -> 18.806299924850464 segundos
-Node -> 67.01 segundos
-
