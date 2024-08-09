@@ -1,4 +1,4 @@
-package array
+package array_test
 
 import (
 	"testing"
@@ -23,7 +23,7 @@ func TestFindElement(t *testing.T) {
 		t.Run("", func(t *testing.T) {
 			got := array.FindElement(tt.arr, tt.key)
 			if got != tt.want {
-				t.Errorf("findElement(%v, %d) = %d; want %d",
+				t.Errorf("FindElement(%v, %d) = %d; want %d",
 					tt.arr, tt.key, got, tt.want)
 			}
 		})
