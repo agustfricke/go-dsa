@@ -12,30 +12,3 @@ repository provides practical examples and solutions.
 ```bash
 go test ./... -v
 ```
-
-## Array data structure
-### Insert at the end
-```bash
-go test -v ./ds/array/insert_end_test.go
-```
-
-### Search
-```bash
-go test -v ./ds/array/search_test.go
-```
-
-### Delete 
-```bash
-go test -v ./ds/array/delete_test.go
-```
-
-### Insert at any position
-```bash
-go test -v ./ds/array/insert_any_test.go
-```
-
-## Linked list
-### Singly linked list(Insert, Read, Search by index, Delete by index)
-```bash
-go test -v ./ds/linked_list/singly/singly_test.go
-```

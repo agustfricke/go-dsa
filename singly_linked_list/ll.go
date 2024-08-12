@@ -1,11 +1,10 @@
 package singlylinkedlist
 
 type Node struct {
-  Data int
-  Next *Node
+	Data int
+	Next *Node
 }
 
 type LinkedList struct {
-  Head *Node
+	Head *Node
 }
-

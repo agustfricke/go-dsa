@@ -1,12 +1,12 @@
 package doublylinkedlist
 
 type Node struct {
-  Data int
-  Prev *Node
-  Next *Node
+	Data int
+	Prev *Node
+	Next *Node
 }
 
 type DoublyLinkedList struct {
-  Head *Node
-  Tail *Node
+	Head *Node
+	Tail *Node
 }
