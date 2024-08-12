@@ -37,5 +37,5 @@ go test -v ./ds/array/insert_any_test.go
 ## Linked list
 ### Singly linked list(Insert, Read, Search by index, Delete by index)
 ```bash
-go test -v ./ds/linked_list/singly_test.go
+go test -v ./ds/linked_list/singly/singly_test.go
 ```
