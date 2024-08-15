@@ -1,21 +1,21 @@
-package queue_test
+package llqueue_test
 
 import (
 	"testing"
 
-	"github.com/agustfricke/dsa-go/queue"
+	llqueue "github.com/agustfricke/dsa-go/queue/ll_queue"
 )
 
 func TestQueue(t *testing.T) {
 	t.Run("NewQueue", func(t *testing.T) {
-		q := queue.NewQueue[int]()
+		q := llqueue.NewQueue[int]()
 		if q.Length != 0 || q.Head != nil || q.Tail != nil {
 			t.Errorf("NewQueue() did not initialize an empty queue")
 		}
 	})
 
 	t.Run("Enqueue", func(t *testing.T) {
-		q := queue.NewQueue[int]()
+		q := llqueue.NewQueue[int]()
 		q.Enqueue(1)
 		if q.Length != 1 || q.Head.Value != 1 || q.Tail.Value != 1 {
 			t.Errorf("Enqueue() did not add element correctly")
@@ -27,7 +27,7 @@ func TestQueue(t *testing.T) {
 	})
 
 	t.Run("Dequeue", func(t *testing.T) {
-		q := queue.NewQueue[int]()
+		q := llqueue.NewQueue[int]()
 		q.Enqueue(1)
 		q.Enqueue(2)
 		val, err := q.Dequeue()
@@ -45,7 +45,7 @@ func TestQueue(t *testing.T) {
 	})
 
 	t.Run("Peek", func(t *testing.T) {
-		q := queue.NewQueue[int]()
+		q := llqueue.NewQueue[int]()
 		_, err := q.Peek()
 		if err == nil {
 			t.Errorf("Peek() should return error on empty queue")
@@ -58,7 +58,7 @@ func TestQueue(t *testing.T) {
 	})
 
 	t.Run("IsEmpty", func(t *testing.T) {
-		q := queue.NewQueue[int]()
+		q := llqueue.NewQueue[int]()
 		if !q.IsEmpty() {
 			t.Errorf("IsEmpty() should return true for new queue")
 		}
